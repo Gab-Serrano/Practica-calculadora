@@ -5,19 +5,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculadora</title>
-    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
+    <title>Calculadora</title>
 </head>
 
 <body>
     <div class="container">
         <div class="calculadora">
-            <div class="pantalla">
-                <input type="text" name="display">
-            </div>
-            <div class="botones">
-                <form>
+            <form>
+                <div class="pantalla">
+                    <input type="text" name="display" placeholder="0">
+                </div>
+                <div class="botones">
+
                     <div>
                         <input class="botones-operaciones" type="button" value="(">
                         <input class="botones-operaciones" type="button" value=")">
@@ -25,7 +25,7 @@
                         <input class="botones-borrar" type="button" value="C">
                     </div>
                     <div class="botones-del-medio">
-                        <input type="button" value="7">
+                        <input type="button" value="7" onclick="display.value = display.value += '7'">
                         <input type="button" value="8">
                         <input id="nueve" type="button" value="9">
                         <input class="botones-operaciones" type="button" value="/">
@@ -48,10 +48,12 @@
                         <input class="botones-operaciones" type="button" value="+">
                         <input class="botones-igual" type="button" value="=">
                     </div>
-                </form>
-            </div>
+
+                </div>
+            </form>
         </div>
     </div>
     <script src="script.js"></script>
 </body>
+
 </html>

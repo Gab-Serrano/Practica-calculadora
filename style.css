@@ -15,13 +15,11 @@
 }
 
 .calculadora {
+    width: 16rem;
+    height: 23rem;
     background-color: rgba(34, 33, 33, 0.808);
     padding: 1rem;
     border-radius: 10px;
-}
-
-.pantalla {
-    justify-content: right;
 }
 
 .pantalla input{
@@ -33,18 +31,13 @@
     border-radius: 5px;
     cursor: pointer;
     text-align: right;
-    width: 11.5rem;
-}
-
-.botones{
-    display: flex;
-    justify-content: center;
+    width: 100%;
 }
 
 .botones input {
     margin: 0.1rem;
-    width: 2.5rem;
-    height: 2.5rem;
+    width: 3rem;
+    height: 3rem;
     font-size: 1.2rem;
     background-color: whitesmoke;
     border: none;
