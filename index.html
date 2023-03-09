@@ -1,12 +1,57 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora</title>
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    
+    <div class="container">
+        <div class="calculadora">
+            <div class="pantalla">
+                <input type="text" name="display">
+            </div>
+            <div class="botones">
+                <form>
+                    <div>
+                        <input class="botones-operaciones" type="button" value="(">
+                        <input class="botones-operaciones" type="button" value=")">
+                        <input class="botones-borrar" type="button" value="AC">
+                        <input class="botones-borrar" type="button" value="C">
+                    </div>
+                    <div class="botones-del-medio">
+                        <input type="button" value="7">
+                        <input type="button" value="8">
+                        <input id="nueve" type="button" value="9">
+                        <input class="botones-operaciones" type="button" value="/">
+                    </div>
+                    <div>
+                        <input type="button" value="4">
+                        <input type="button" value="5">
+                        <input type="button" value="6">
+                        <input class="botones-operaciones" type="button" value="*">
+                    </div>
+                    <div>
+                        <input type="button" value="1">
+                        <input type="button" value="2">
+                        <input type="button" value="3">
+                        <input class="botones-operaciones" type="button" value="-">
+                    </div>
+                    <div>
+                        <input type="button" value="0">
+                        <input class="botones-operaciones" type="button" value=".">
+                        <input class="botones-operaciones" type="button" value="+">
+                        <input class="botones-igual" type="button" value="=">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
